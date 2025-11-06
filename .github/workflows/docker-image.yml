@@ -32,7 +32,7 @@ jobs:
           context: ./Travel-Springboot
           file: ./Travel-Springboot/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Kubeansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/kubeansible-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./TravelFrontend/Travel-React
           file: ./TravelFrontend/Travel-React/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Kubeansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/kubeansible-frontend:latest
