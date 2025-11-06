@@ -29,7 +29,7 @@ jobs:
       - name: Build and Push Backend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./Travel-Springboot
+          context: ./TravelBackend/Travel-Springboot
           file: ./Travel-Springboot/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/kubeansible-backend:latest
