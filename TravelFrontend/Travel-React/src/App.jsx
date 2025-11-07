@@ -12,8 +12,7 @@ function App() {
   const [message, setMessage] = useState("");
   const [editingId, setEditingId] = useState(null);
 
-  // ✅ Use value from .env (fallback optional)
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:30025";
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:30025/places";
   console.log("API BASE URL =", API_BASE_URL);
 
   const showMessage = (msg) => {
